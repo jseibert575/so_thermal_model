@@ -1,0 +1,25 @@
+./mpi_filter_sim -n 6 ./config/v2as4_filters.cfg (performing simulation on multiple threads)
+
+watch tail -n 20 logs/v2as4_filters.log (track process)
+
+top (look at the cpu)
+
+vi logs/v2as4_filters.log (open the log)
+
+killall filtersim
+
+./loading_sim config/v2cs5.cfg
+(calculate total power, simple connection assumed, will look for _out.cfg)
+
+
+MLI_AL_com_25 assume black inside, changed in emissivity.py in cryolib
+
+Isodimension: inner diameter, width go out
+materials in cryolib
+ 
+conductivity.py get_conductivity
+
+shapes in cyolib/filters.py
+
+filters notice the thickness should match the actual filter thickness in library
+
